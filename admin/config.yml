@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: imjeun1276/spcgfs-cp-page
+  name: git-gateway
   branch: main
 
 media_folder: "images"
