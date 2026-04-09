@@ -102,3 +102,40 @@ body {
   color: #666;
   font-size: 14px;
 }
+
+/* 연도별 토글 */
+.year-group {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.year-group summary {
+  cursor: pointer;
+  list-style: none;
+  padding: 18px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  background: #f7f7f7;
+  border-bottom: 1px solid #eee;
+}
+
+.year-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.year-group summary::after {
+  content: "＋";
+  float: right;
+  font-size: 20px;
+}
+
+.year-group[open] summary::after {
+  content: "－";
+}
+
+.year-items {
+  padding: 16px;
+}
